@@ -40,5 +40,4 @@ for i in range(0, sequence_len, 3):
     translation_str += Codon_Dict[sequence_str[i:i+3]]
 
 # Print translation in FASTA form
-print(descriptor_str)
-print(translation_str)
+sys.stdout.write(descriptor_str + '\n' + translation_str + '\n')

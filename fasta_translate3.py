@@ -55,8 +55,9 @@ def translate_sequence(sequence_str):
 
 # Translate and print each gene in Genes_Dict
 for descriptor_str in Genes_Dict: 
-    print(descriptor_str)
-    print(translate_sequence(Genes_Dict[descriptor_str]))
+    sys.stdout.write(descriptor_str + '\n' + translate_sequence(Genes_Dict[descriptor_str]) + '\n')
+    #print(descriptor_str)
+    #print(translate_sequence(Genes_Dict[descriptor_str]))
 
 
 

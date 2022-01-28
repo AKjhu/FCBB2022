@@ -10,4 +10,5 @@ for line in sys.stdin:
 
 # Initialize and print Fasta1_Dict
 Fasta1_Dict = {descriptor_str: sequence_str}
-print(Fasta1_Dict)
+for descriptor_str in Fasta1_Dict:
+    sys.stdout.write(descriptor_str + ' : ' + Fasta1_Dict[descriptor_str] + '\n')
